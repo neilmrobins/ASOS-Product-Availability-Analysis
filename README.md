@@ -23,7 +23,7 @@ This analysis investigates ASOS product availability and estimates potential rev
 
 ## Visualisation
 
-![Brand Performance Scatter](visuals/brand_performance_scatter.png)
+See attached file
 
 - **X-axis:** Average product price (£)
 - **Y-axis:** Out-of-stock rate
