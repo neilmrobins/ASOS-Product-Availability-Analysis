@@ -1,12 +1,40 @@
-# ASOS-Product-Availability-Analysis
-Identifying Potential Lost Revenue from Stockouts
+# ASOS Product Availability Analysis
+*Exploring stockouts and potential lost revenue from ASOS products using Python.*
 
-#Key Insights
+---
 
-**High-price products show the highest stockout exposure**. Several brands with average prices above **£40** also experience **out-of-stock rates above 40%**, suggesting demand may exceed available supply.
+## Key Insights
+- **High-price products have highest stockout exposure:** Several brands with average prices above **£40** also have **out-of-stock rates above 40%**, indicating potential unmet demand.
+- **Stockouts are concentrated in a few brands:** Five brands are in the high-price/high-stockout quadrant.
+- **Estimated lost revenue signals opportunity:** Proxy metric combining price and out-of-stock counts highlights potential revenue loss.
+- **Improving availability in high-demand sizes may increase sales:** Focusing on popular sizes in premium products is likely the fastest revenue opportunity.
 
-**Inventory shortages are concentrated within a small number of brands**. The analysis identified five brands positioned in the high-price/high-stockout quadrant, indicating a potential opportunity for targeted inventory optimisation.
+---
 
-**Estimated lost revenue signals unmet demand**. A proxy metric based on product price and number of unavailable sizes suggests that stockouts may be contributing to **significant potential revenue loss** across these brands.
+## Project Overview
+This analysis investigates ASOS product availability and estimates potential revenue loss due to **out-of-stock sizes**. It includes:
+1. Data cleaning and brand extraction
+2. Stockout analysis at the product level
+3. Aggregation at the brand level
+4. Visualisation of high-risk, high-value brands
+5. Exporting cleaned data for reuse in Power BI or other tools
 
-**Improving availability in high-demand size ranges could capture additional sales**. Addressing size-level availability for premium products may provide a relatively low-effort opportunity to improve revenue performance.
+---
+
+## Visualisation
+
+![Brand Performance Scatter](visuals/brand_performance_scatter.png)
+
+- **X-axis:** Average product price (£)
+- **Y-axis:** Out-of-stock rate
+- **Bubble size:** Estimated lost revenue
+- **Labels:** Brands with high price and high stockout rates
+
+Red dashed lines indicate the threshold of **£40 price** and **40% out-of-stock rate** for high-priority brands.
+
+---
+
+## How to Run
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/asos-stockout-analysis.git
